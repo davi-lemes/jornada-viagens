@@ -18,6 +18,10 @@ header {
   margin-top: 24px;
 }
 
+input[type="checkbox"]:checked ~ nav {
+  display: block;
+} /* nesse caso, estamos pegando o input checkbox e se ele estiver em estado de checked, utilizamos o ~ (sinal de irmandade para coletar uma tag irmã) para coletar o nav e aparecer na tela em forma de display block. Caso não esteja checked, o nav ficará com o display "none" */
+
 nav {
   display: none;
 }
