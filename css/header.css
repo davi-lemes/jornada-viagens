@@ -1,12 +1,23 @@
 header {
-  width: 100%;
-  height: 138px;
   background-color: var(--background-tertiary-color);
+  display: flex; /* faz com que elementos da header (a e div) possam se comportar de forma automatica. */
+  flex-direction: row; /* faz com que elementos do header se comportam na mesma linha. */
+  justify-content: space-between; /* deixa um espaço entre os dois elementos de header. */
+  align-items: flex-start;
+  padding: 38px 48px;
 }
 
 .logo {
     display: inline-block;
     width: 68px;
     height: 64px;
-    margin: 37px 0 0 48px;
+}
+
+
+.navigation-menu {
+  margin-top: 24px;
+}
+
+nav {
+  display: none;
 }
