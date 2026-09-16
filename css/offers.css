@@ -1,6 +1,8 @@
 .offers-cards {
   display: flex;
   flex-direction: column;
+  align-items: center; /* atributo utilizado somente quando o flex direction estiver como coluna */
+  gap: 24px; /* propriedade do flex para separar os filhos dessa div de offers-cards */
 }
 
 .card {
@@ -61,14 +63,15 @@
 
 @media screen and (min-width: 768px) {
   .offers-cards {
-    display: flex;
     flex-direction: row;
+    flex-wrap: wrap; /* tem como funcionalidade "embrulhar" / "juntar" os filhos da tag offers-cards */
+    justify-content: center; /* utilizado no lugar do align-items quando flex-direction for em linhas */
   }
 }
 
 @media screen and (min-width: 1024px) {
   .card {
-    width: 588px;
+    width: 420px;
     height: 308px;
   }
   .card header h3 {
@@ -76,5 +79,18 @@
   }
   .card header span {
     font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    width: 588px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .offers-cards {
+    width: 1250px;
+    margin: 0 auto;
   }
 }
