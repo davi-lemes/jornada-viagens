@@ -44,7 +44,7 @@ input[type="checkbox"]:checked ~ nav {
 }
 
 .list-links li a {
-  color: var(--text-secundary-color);
+  color: var(--text-secondary-color);
   text-decoration: none; /* remove o sublinhado abaixo do elemento "a". */
   font-weight: var(--menu-text-weight);
   font-size: 24px;
