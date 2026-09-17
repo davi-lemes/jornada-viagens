@@ -1,5 +1,8 @@
 .categories-cards {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
 }
 
 .categories {
@@ -8,6 +11,11 @@
     display: inline-block;
     width: 312px;
     height: 220px;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 41px 16px;
+    border-radius: 8px;
+    text-align: center;
 }
 
 .categories header {
@@ -16,9 +24,18 @@
     align-items: center;
     background-color: transparent;
     position: static;
-    padding: 41px 116px 0;
+    padding: 0;
+    margin-bottom: 24px;
 }
 
-.titles-categories {
-    
+.categories header img {
+    width: 80px;
+    height: 80px;
+}
+
+.title-categories {
+    width: 280px;
+    height: 34px;
+    font-weight: var(--titles-weight);
+    font-size: 28px;
 }
