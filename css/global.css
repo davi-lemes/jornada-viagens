@@ -81,4 +81,7 @@ body {
   .button:hover {
     background-color: var(--primary-color);
   }
+  .section-title h2 {
+    margin: 104px 0 0;
+  }
 }
