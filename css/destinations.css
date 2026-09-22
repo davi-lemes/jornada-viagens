@@ -1,7 +1,38 @@
+.destination-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* atributo utilizado somente quando o flex direction estiver como coluna */
+  gap: 40px; /* propriedade do flex para separar os filhos dessa div de offers-cards */
+}
+
 .destinations .item header {
   display: block;
   background-color: transparent;
   position: static;
   padding: 0;
+  margin-bottom: 24px;
+}
+
+.item {
+  width: 312px;
+}
+
+.img-item {
+  height: 360px;
+}
+
+.img-item img {
+  width: 312px;
+  height: 360px;
+}
+.item header h4 {
+  font-size: 28px;
+  font-weight: var(--titles-weight);
+  margin: 24px 0;
+}
+
+.item p {
+  font-size: 20px;
+  font-weight: var(--text-weight);
   margin-bottom: 24px;
 }
