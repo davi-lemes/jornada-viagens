@@ -1,8 +1,8 @@
-header {
+.main-header {
   background-color: var(--background-tertiary-color);
-  display: flex; /* faz com que elementos da header (a e div) possam se comportar de forma automatica. */
+  display: flex; /* faz com que elementos do header (a e div) possam se comportar de forma automatica. */
   flex-direction: row; /* faz com que elementos do header se comportam na mesma linha. */
-  justify-content: space-between; /* deixa um espaço entre os dois elementos de header. */
+  justify-content: space-between; /* deixa um espaço entre os dois elementos do header. */
   align-items: flex-start;
   padding: 38px 48px;
   position: relative;
@@ -77,7 +77,7 @@ nav {
 } /* Faz com que aplique essas estilizações quando a tela for no minimo 768px, que é a tela minima para um tablet. */
 
 @media screen and (min-width: 1024px) {
-  header {
+ .main-header {
     padding: 38px 120px;
   }
   .logo {
@@ -97,7 +97,7 @@ nav {
 }
 
 @media screen and (min-width: 1920px) {
-  header {
+  .main-header {
     padding: 38px 160px;
   }
 }
