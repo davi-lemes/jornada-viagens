@@ -1,0 +1,26 @@
+.image-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 254px 182px;
+  grid-template-areas:
+    "image.bag .image.passport"
+    "image.people";
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.image-content .image.bag {
+  background: url(../img/bag-mobile.jpg);
+  background-size: cover;
+}
+
+.image-content .image.passport {
+  background: url(../img/passport-mobile.jpg);
+  background-size: cover;
+}
+
+.image-content .image.people.large {
+  background: url(../img/people-mobile.jpg);
+  background-size: cover;
+  grid-column: span 2;
+}
