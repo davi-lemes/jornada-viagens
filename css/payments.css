@@ -24,3 +24,33 @@
   background-size: cover;
   grid-column: span 2;
 }
+
+@media screen and (min-width: 768px) {
+  .image-content .image.bag {
+    background: url(../img/bag-tablet.jpg);
+    background-size: cover;
+  }
+  .image-content .image.passport {
+    background: url(../img/passport-tablet.jpg);
+    background-size: cover;
+  }
+  .image-content .image.people.large {
+    background: url(../img/people-tablet.jpg);
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .image-content .image.bag {
+    background: url(../img/bag-desktop.jpg);
+    background-size: cover;
+  }
+  .image-content .image.passport {
+    background: url(../img/passport-desktop.jpg);
+    background-size: cover;
+  }
+  .image-content .image.people.large {
+    background: url(../img/people-desktop.jpg);
+    background-size: cover;
+  }
+}
