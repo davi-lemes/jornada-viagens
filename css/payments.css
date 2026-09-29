@@ -1,56 +1,67 @@
-.image-content {
+.payments .image-gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 254px 182px;
-  grid-template-areas:
-    "image.bag .image.passport"
-    "image.people";
   gap: 24px;
   margin-top: 24px;
+  width: 100%;
 }
 
-.image-content .image.bag {
-  background: url(../img/bag-mobile.jpg);
+.payments .content-container .image-gallery .image.bag {
+  background: url(../img/bag-mobile.jpg) no-repeat;
   background-size: cover;
 }
 
-.image-content .image.passport {
-  background: url(../img/passport-mobile.jpg);
+.payments .content-container .image-gallery .image.passport {
+  background: url(../img/passport-mobile.jpg) no-repeat;
   background-size: cover;
 }
 
-.image-content .image.people.large {
-  background: url(../img/people-mobile.jpg);
+.payments .content-container .image-gallery .image.people.large {
+  background: url(../img/people-mobile.jpg) no-repeat;
   background-size: cover;
   grid-column: span 2;
 }
 
 @media screen and (min-width: 768px) {
-  .image-content .image.bag {
+  .payments .content-container .image-gallery .image.bag {
     background: url(../img/bag-tablet.jpg);
     background-size: cover;
   }
-  .image-content .image.passport {
+  .payments .content-container .image-gallery .image.passport {
     background: url(../img/passport-tablet.jpg);
     background-size: cover;
   }
-  .image-content .image.people.large {
+  .payments .content-container .image-gallery .image.people.large {
     background: url(../img/people-tablet.jpg);
     background-size: cover;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .image-content .image.bag {
+  .payments .content-container .image-gallery .image.bag {
     background: url(../img/bag-desktop.jpg);
     background-size: cover;
   }
-  .image-content .image.passport {
+  .payments .content-container .image-gallery .image.passport {
     background: url(../img/passport-desktop.jpg);
     background-size: cover;
   }
-  .image-content .image.people.large {
+  .payments .content-container .image-gallery .image.people.large {
     background: url(../img/people-desktop.jpg);
     background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .payments .content-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .payments .content-container .text-content {
+    width: 360px;
+  }
+  .payments .content-container .image-gallery {
+    width: 790px;
   }
 }
