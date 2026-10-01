@@ -1,0 +1,25 @@
+.hero .bottom-hero {
+  background: url(../img/hero-footer-mobile.jpg) no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .hero .bottom-hero {
+    background: url(../img/hero-footer-tablet.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero .bottom-hero {
+    background: url(../img/hero-footer-desk.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero .bottom-hero {
+  height: 600px;
+}
+}
+
