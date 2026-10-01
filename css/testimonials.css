@@ -22,17 +22,17 @@
   height: 86px;
 }
 
-.testimonial-container footer .profile-content h4 {
-    font-size: 20px;
-    line-height: 32px;
-    font-weight: var(--titles-weight);
-    margin: 0 0 8px;
+.testimonial-container footer .profile-content h3 {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: var(--titles-weight);
+  margin: 0 0 8px;
 }
 
 .testimonial-container footer .profile-content .rating .star {
-    font-size: 40px;
-    line-height: 32px;
-    color: var(--secondary-color);
+  font-size: 40px;
+  line-height: 32px;
+  color: var(--secondary-color);
 }
 
 @media screen and (min-width: 1440px) {
