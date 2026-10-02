@@ -1,4 +1,7 @@
-.hero .hero-img, .bottom-hero {
+/* Estilização do Index.html */
+
+.hero .hero-img,
+.bottom-hero {
   height: 400px;
 }
 
@@ -43,4 +46,41 @@
   .hero h2 {
     padding: 104px 160px;
   }
+}
+
+/* Estilização do travel-packages.html */
+
+.travel-packages-hero .hero-img {
+  height: 460px;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/hero-travel-mobile.jpg) no-repeat;
+  background-size: cover;
+  background-position-x: -290px;
+  padding: 65px 24px;
+  box-sizing: border-box;
+}
+
+.travel-packages-hero .hero-img {
+  color: var(--text-secondary-color);
+}
+
+.travel-packages-hero .hero-img h1 {
+  font-size: 48px;
+  font-weight: var(--titles-weight);
+}
+
+.travel-packages-hero .hero-img hr {
+  width: 180px;
+  height: 4px;
+  background-color: var(--secondary-color);
+  border: none;
+  margin: 16px 0 32px;
+}
+
+.travel-packages-hero .hero-img p {
+  font-size: 20px;
+  font-weight: var(--text-weight);
+  line-height: 32px;
+  width: 312px;
+  height: 160px;
+  text-align: left;
 }
