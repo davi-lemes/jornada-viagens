@@ -50,6 +50,10 @@
 
 /* Estilização do travel-packages.html */
 
+.hero.travel-packages-hero {
+  margin-bottom: 88px;
+}
+
 .hero.travel-packages-hero .hero-img {
   height: 460px;
   color: var(--text-secondary-color);
@@ -60,7 +64,6 @@
   background-position-x: -290px;
   padding: 65px 24px;
   box-sizing: border-box;
-  margin-bottom: 88px;
 }
 
 .hero.travel-packages-hero .hero-img h1 {
@@ -120,9 +123,12 @@
 
 @media screen and (min-width: 1024px) {
   .hero.travel-packages-hero .hero-img {
-    background: url(../img/hero-travel-desk.jpg) no-repeat;
+    background:
+      linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(../img/hero-travel-desk.jpg) no-repeat;
     background-size: cover;
     background-position-x: -100px;
+    margin: 0 auto;
   }
 }
 
@@ -132,8 +138,9 @@
   }
 }
 
-@media screen and (min-width: 1920px) {
-  .hero.travel-packages-hero .hero-img {
-    height: 920px;
+@media screen and (min-width: 1440px) {
+  .hero.travel-packages-hero .hero-img .hero-content {
+    width: 1200px;
+    margin: 0 auto;
   }
 }
