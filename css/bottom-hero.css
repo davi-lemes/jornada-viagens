@@ -23,3 +23,24 @@
 }
 }
 
+/* Estilização do travel-packages.html */
+
+.hero.travel-packages-hero-bottom .bottom-hero {
+  background: url(../img/hero-footer-japan-mobile.jpg) no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .hero.travel-packages-hero-bottom .bottom-hero {
+  background: url(../img/hero-footer-japan-tablet.jpg) no-repeat;
+  background-size: cover;
+}
+}
+
+@media screen and (min-width: 1024px) {
+  .hero.travel-packages-hero-bottom .bottom-hero {
+  background: url(../img/hero-footer-japan-desk.jpg) no-repeat;
+  background-size: cover;
+}
+}
+
