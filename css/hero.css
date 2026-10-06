@@ -60,13 +60,12 @@
   background-position-x: -290px;
   padding: 65px 24px;
   box-sizing: border-box;
+  margin-bottom: 88px;
 }
 
 .hero.travel-packages-hero .hero-img h1 {
   font-size: 48px;
   font-weight: var(--titles-weight);
-  width: 312px;
-  height: 118px;
 }
 
 .hero.travel-packages-hero .hero-img hr {
@@ -92,8 +91,14 @@
   }
 }
 
+@media screen and (min-width: 524px) {
+  .hero.travel-packages-hero .hero-img {
+    background-position-x: -50px;
+  }
+}
+
 @media screen and (min-width: 768px) {
-  .hero.hero.travel-packages-hero .hero-img {
+  .hero.travel-packages-hero .hero-img {
     background:
       linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
       url(../img/hero-travel-tablet.jpg) no-repeat;
@@ -114,9 +119,21 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .hero.hero.travel-packages-hero .hero-img {
+  .hero.travel-packages-hero .hero-img {
     background: url(../img/hero-travel-desk.jpg) no-repeat;
     background-size: cover;
-    background-position-x: -30px;
+    background-position-x: -100px;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+  .hero.travel-packages-hero .hero-img {
+    background-position-x: 0;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .hero.travel-packages-hero .hero-img {
+    height: 920px;
   }
 }
