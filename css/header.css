@@ -50,6 +50,11 @@ input[type="checkbox"]:checked ~ nav {
   font-size: 24px;
 } /* seleciona elementos que está dentro da classe "list-links" que é o "li". Mas, após isso, também seleciona o elemento que está dentro do "li". Nesse caso, o elemento "a". */
 
+.list-links li a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
 nav {
   display: none;
 }

@@ -66,3 +66,66 @@
     margin: 0;
   }
 }
+
+/* Estilização do travel-packages.html */
+
+.payments.travel-packages-payments
+  .content-container
+  .text-content
+  .content-title {
+  font-size: 40px;
+}
+
+.payments.travel-packages-payments .content-container .text-content h4 {
+  font-size: 28px;
+}
+
+.payments .content-container .image-gallery .image.japan-structure {
+  background: url(../img/japan-structure-mobile.jpg) no-repeat;
+  background-size: cover;
+}
+
+.payments .content-container .image-gallery .image.japan-tower {
+  background: url(../img/japan-tower-mobile.jpg) no-repeat;
+  background-size: cover;
+}
+
+.payments .content-container .image-gallery .image.japan-skin.large {
+  background: url(../img/japan-skin-mobile.jpg) no-repeat;
+  background-size: cover;
+  grid-column: span 2;
+}
+
+@media screen and (min-width: 768px) {
+  .payments .content-container .image-gallery .image.japan-structure {
+    background: url(../img/japan-structure-tablet.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  .payments .content-container .image-gallery .image.japan-tower {
+    background: url(../img/japan-tower-tablet.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  .payments .content-container .image-gallery .image.japan-skin.large {
+    background: url(../img/japan-skin-tablet.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .payments .content-container .image-gallery .image.japan-structure {
+    background: url(../img/japan-structure-desktop.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  .payments .content-container .image-gallery .image.japan-tower {
+    background: url(../img/japan-tower-desktop.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  .payments .content-container .image-gallery .image.japan-skin.large {
+    background: url(../img/japan-skin-desktop.jpg) no-repeat;
+    background-size: cover;
+  }
+}
