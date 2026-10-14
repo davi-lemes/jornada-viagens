@@ -10,7 +10,7 @@
   width: 100%;
 }
 
-.itinerary .item.arrival .img-item {
+.itinerary .itinerary-items .item.arrival .img-item {
   background: url(../img/bg-tokyo-arrival-mobile.jpg);
   background-size: cover;
   height: 360px;
@@ -40,21 +40,30 @@
 }
 
 @media screen and (min-width: 768px) {
-  .destinations {
-    width: 648px;
+  .itinerary .itinerary-items .item.arrival {
+    display: flex;
+    flex-direction: row;
+    height: 360px;
+    gap: 24px;
   }
 
-  .destinations .item .img-item {
-    height: 452px;
+  .itinerary .itinerary-items .item.arrival span {
+    width: 100%;
   }
 
-  .destinations .item.tokyo .img-item {
-    background: url(../img/tokyo-tablet-desk.jpg);
+  .itinerary .itinerary-items .item.arrival span .content-title {
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  .itinerary .itinerary-items .item.arrival .img-item {
+    background: url(../img/bg-tokyo-arrival-tablet.jpg);
     background-size: cover;
+    margin: 0;
   }
 
-  .destinations .item.osaka .img-item {
-    background: url(../img/osaka-tablet-desk.jpg);
+  .itinerary .item.accommodation .content-accommodation .img-item {
+    background: url(../img/bg-tokyo-accommodation-tablet.jpg);
     background-size: cover;
   }
 
