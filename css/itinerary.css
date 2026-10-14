@@ -1,0 +1,92 @@
+/* Estilização do journey-blog.html */
+
+.itinerary-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* atributo utilizado somente quando o flex direction estiver como coluna */
+}
+
+.itinerary .item .img-item {
+  width: 100%;
+}
+
+.itinerary .item.arrival .img-item {
+  background: url(../img/bg-tokyo-arrival-mobile.jpg);
+  background-size: cover;
+  height: 360px;
+  margin-top: 24px;
+}
+
+.itinerary .item.accommodation .content-accommodation .img-item {
+  background: url(../img/bg-card-japao.jpg);
+  background-size: cover;
+  height: 300px;
+  margin: 32px 0 8px;
+}
+
+.itinerary .item.accommodation .content-accommodation p {
+  font-size: 14px;
+  font-weight: var(--text-weight);
+  line-height: 28px;
+  margin: 0;
+}
+
+.itinerary .item header h3 {
+  margin: 31px 0 24px;
+}
+
+.itinerary .button {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .destinations {
+    width: 648px;
+  }
+
+  .destinations .item .img-item {
+    height: 452px;
+  }
+
+  .destinations .item.tokyo .img-item {
+    background: url(../img/tokyo-tablet-desk.jpg);
+    background-size: cover;
+  }
+
+  .destinations .item.osaka .img-item {
+    background: url(../img/osaka-tablet-desk.jpg);
+    background-size: cover;
+  }
+
+  .destinations .button {
+    width: 280px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .destinations {
+    width: 900px;
+  }
+
+  .destinations .item.tokyo .img-item {
+    background: url(../img/tokyo-tablet-desk.jpg);
+    background-size: cover;
+  }
+
+  .destinations .item.osaka .img-item {
+    background: url(../img/osaka-tablet-desk.jpg);
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .destinations {
+    width: 1200px;
+  }
+
+  .destination-items {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+}
