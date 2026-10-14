@@ -1,12 +1,12 @@
 /* Estilização do journey-blog.html */
 
-.itinerary-items {
+.itinerary .itinerary-items {
   display: flex;
   flex-direction: column;
   align-items: center; /* atributo utilizado somente quando o flex direction estiver como coluna */
 }
 
-.itinerary .item .img-item {
+.itinerary .itinerary-items .item .img-item {
   width: 100%;
 }
 
@@ -17,26 +17,26 @@
   margin-top: 24px;
 }
 
-.itinerary .item.accommodation .content-accommodation .img-item {
+.itinerary
+  .itinerary-items
+  .item.accommodation
+  .content-accommodation
+  .img-item {
   background: url(../img/bg-card-japao.jpg);
   background-size: cover;
   height: 300px;
   margin: 32px 0 8px;
 }
 
-.itinerary .item.accommodation .content-accommodation p {
+.itinerary .itinerary-items .item.accommodation .content-accommodation p {
   font-size: 14px;
   font-weight: var(--text-weight);
   line-height: 28px;
   margin: 0;
 }
 
-.itinerary .item header h3 {
+.itinerary .itinerary-items .item header h3 {
   margin: 31px 0 24px;
-}
-
-.itinerary .button {
-  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -62,7 +62,11 @@
     margin: 0;
   }
 
-  .itinerary .item.accommodation .content-accommodation .img-item {
+  .itinerary
+    .itinerary-items
+    .item.accommodation
+    .content-accommodation
+    .img-item {
     background: url(../img/bg-tokyo-accommodation-tablet.jpg);
     background-size: cover;
   }
@@ -73,29 +77,26 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .destinations {
-    width: 900px;
-  }
-
-  .destinations .item.tokyo .img-item {
-    background: url(../img/tokyo-tablet-desk.jpg);
+  .itinerary .itinerary-items .item.arrival .img-item {
+    background: url(../img/bg-tokyo-arrival-desk.jpg);
     background-size: cover;
   }
 
-  .destinations .item.osaka .img-item {
-    background: url(../img/osaka-tablet-desk.jpg);
+  .itinerary
+    .itinerary-items
+    .item.accommodation
+    .content-accommodation
+    .img-item {
+    background: url(../img/bg-tokyo-accommodation-desk.jpg);
     background-size: cover;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .destinations {
-    width: 1200px;
+  .itinerary .section-title hr {
+    margin-bottom: 64px;
   }
-
-  .destination-items {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
+  .itinerary .itinerary-items .item .content-title {
+    margin-top: 48px;
   }
 }
