@@ -144,3 +144,86 @@
     margin: 0 auto;
   }
 }
+
+/* Estilização do journey-blog.html */
+
+.hero.journey-blog {
+  margin-bottom: 88px;
+}
+
+.hero.journey-blog .hero-img {
+  height: 460px;
+  color: var(--text-secondary-color);
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../img/hero-blog-mobile.jpg) no-repeat;
+  background-size: cover;
+  padding: 81px 24px;
+  box-sizing: border-box;
+}
+
+.hero.journey-blog .hero-img h1 {
+  font-size: 48px;
+  font-weight: var(--titles-weight);
+}
+
+.hero.journey-blog .hero-img hr {
+  width: 180px;
+  height: 4px;
+  background-color: var(--secondary-color);
+  border: none;
+  margin: 16px 0 32px;
+}
+
+.hero.journey-blog .hero-img p {
+  font-size: 20px;
+  font-weight: var(--text-weight);
+  line-height: 32px;
+  width: 312px;
+  height: 128px;
+  text-align: left;
+}
+
+@media screen and (max-width: 340px) {
+  .hero.journey-blog .hero-img p {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero.journey-blog .hero-img {
+    background:
+      linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(../img/hero-blog-tablet.jpg) no-repeat;
+    background-size: cover;
+    height: 620px;
+    padding: 159px 94px 158px 95px;
+  }
+  .hero.journey-blog .hero-img h1 {
+    width: 443px;
+    height: 59px;
+  }
+  .hero.journey-blog .hero-img p {
+    font-size: 32px;
+    line-height: 150%;
+    width: 579px;
+    height: 192px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero.journey-blog .hero-img {
+    background:
+      linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(../img/hero-blog-desk.jpg) no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero.journey-blog .hero-img .hero-content {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}

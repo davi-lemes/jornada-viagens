@@ -1,0 +1,102 @@
+/* Estilização do journey-blog.html */
+
+.itinerary .itinerary-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* atributo utilizado somente quando o flex direction estiver como coluna */
+}
+
+.itinerary .itinerary-items .item .img-item {
+  width: 100%;
+}
+
+.itinerary .itinerary-items .item.arrival .img-item {
+  background: url(../img/bg-tokyo-arrival-mobile.jpg);
+  background-size: cover;
+  height: 360px;
+  margin-top: 24px;
+}
+
+.itinerary
+  .itinerary-items
+  .item.accommodation
+  .content-accommodation
+  .img-item {
+  background: url(../img/bg-card-japao.jpg);
+  background-size: cover;
+  height: 300px;
+  margin: 32px 0 8px;
+}
+
+.itinerary .itinerary-items .item.accommodation .content-accommodation p {
+  font-size: 14px;
+  font-weight: var(--text-weight);
+  line-height: 28px;
+  margin: 0;
+}
+
+.itinerary .itinerary-items .item header h3 {
+  margin: 31px 0 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .itinerary .itinerary-items .item.arrival {
+    display: flex;
+    flex-direction: row;
+    height: 360px;
+    gap: 24px;
+  }
+
+  .itinerary .itinerary-items .item.arrival span {
+    width: 100%;
+  }
+
+  .itinerary .itinerary-items .item.arrival span .content-title {
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  .itinerary .itinerary-items .item.arrival .img-item {
+    background: url(../img/bg-tokyo-arrival-tablet.jpg);
+    background-size: cover;
+    margin: 0;
+  }
+
+  .itinerary
+    .itinerary-items
+    .item.accommodation
+    .content-accommodation
+    .img-item {
+    background: url(../img/bg-tokyo-accommodation-tablet.jpg);
+    background-size: cover;
+  }
+
+  .destinations .button {
+    width: 280px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .itinerary .itinerary-items .item.arrival .img-item {
+    background: url(../img/bg-tokyo-arrival-desk.jpg);
+    background-size: cover;
+  }
+
+  .itinerary
+    .itinerary-items
+    .item.accommodation
+    .content-accommodation
+    .img-item {
+    background: url(../img/bg-tokyo-accommodation-desk.jpg);
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .itinerary .section-title hr {
+    margin-bottom: 64px;
+  }
+  .itinerary .itinerary-items .item .content-title {
+    margin-top: 48px;
+  }
+}
