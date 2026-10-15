@@ -78,8 +78,72 @@
   }
 
   .destination-items {
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
 }
+
+/* Estilização do journey-blog.html */
+
+.recommended-destinations .item .img-item {
+  height: 300px;
+}
+
+.recommended-destinations .item.osaka .img-item {
+  background: url(../img/osaka-mobile.jpg);
+  background-size: cover;
+}
+
+.recommended-destinations .item.hiroshima .img-item {
+  background: url(../img/hiroshima-mobile.jpg);
+  background-size: cover;
+}
+
+.recommended-destinations .item.kyoto .img-item {
+  background: url(../img/kyoto-mobile.jpg);
+  background-size: cover;
+}
+
+.recommended-destinations .item header h3 {
+  margin: 16px 0 8px;
+  font-size: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .recommended-destinations .item .img-item {
+    height: 300px;
+  }
+
+  .recommended-destinations .item.osaka .img-item {
+    background: url(../img/osaka-tablet.jpg);
+    background-size: cover;
+  }
+
+  .recommended-destinations .item.hiroshima .img-item {
+    background: url(../img/hiroshima-tablet.jpg);
+    background-size: cover;
+  }
+
+  .recommended-destinations .item.kyoto .img-item {
+    background: url(../img/kyoto-tablet.jpg);
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .recommended-destinations .item.osaka .img-item {
+    background: url(../img/osaka-desk.jpg);
+    background-size: cover;
+  }
+
+  .recommended-destinations .item.hiroshima .img-item {
+    background: url(../img/hiroshima.desk.jpg);
+    background-size: cover;
+  }
+
+  .recommended-destinations .item.kyoto .img-item {
+    background: url(../img/kyoto-desk.jpg);
+    background-size: cover;
+  }
 }
